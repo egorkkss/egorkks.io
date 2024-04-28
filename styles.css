@@ -2,96 +2,151 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Черный фон */
-    color: #fff; /* Белый текст */
-    line-height: 1.6;
 }
 
-header {
-    text-align: center;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Установите желаемую ширину логотипа */
+    height: auto;
+    margin-right: 10px; /* Добавим немного отступа между логотипом и текстом */
+}
+.header {
     background-color: #333;
-    padding: 20px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #555;
-    margin: 0;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+.nav-btn {
     padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #444;
+.nav-btn:hover {
+    background-color: #0056b3;
 }
 
-main {
+.nav-btn.active {
+    background-color: #0056b3;
+}
+
+.nav-btn[data-target="home"]:hover {
+    color: #ff0000; /* Красный цвет */
+}
+
+.nav-btn[data-target="shop"]:hover {
+    color: #00ff00; /* Зелёный цвет */
+}
+
+.nav-btn[data-target="about"]:hover {
+    color: #0000ff; /* Синий цвет */
+}
+
+.nav-btn[data-target="contact"]:hover {
+    color: #ff00ff; /* Фиолетовый цвет */
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 20px;
-}
-
-section {
-    background-color: #222; /* Цвет фона разделов */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: rotateY(10deg);
-}
-
-section h2 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-section p {
-    color: #ccc;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.gallery-img {
-    max-width: 35%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-#contact img {
-    width: 55px; /* Уменьшаем размер иконки Telegram */
-    height: auto;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-#contact img:hover {
-    transform: scale(1.1);
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.product p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.product button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.description {
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
