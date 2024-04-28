@@ -1,54 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт о Славике</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Интернет-магазин электронных сигарет</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .payment-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на сайт о Славике!</h1>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="avatar.png" alt="Логотип сайта" class="logo">
+                <h1>Интернет-магазин электронных сигарет</h1>
+            </div>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">О Славике</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#feedback">Отзывы</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
+    <nav class="navbar">
     </nav>
+    <div class="container">
+        <div class="content">
+            <div class="products">
+                <div class="product">
+                    <img src="вишня.png" alt="Электронная сигарета">
+                    <h2>Электронная сигарета "Вишня"</h2>
+                    <p>Описание: Марка: HQD, с насыщенным вкусом Вишни</p>
+                    <p>Цена: 999 руб.</p>
+                    <button class="add-to-cart-btn" data-product="Вишня" data-price="999">Добавить в корзину</button>
+                    <a href="https://t.me/TIMwagn" class="payment-btn">Оплатить в личных сообщениях</a>
+                </div>
+                <!-- Добавьте остальные товары здесь -->
+                <div class="product">
+                    <img src="черника.jpg" alt="Электронная сигарета">
+                    <h2>Электронная сигарета "Черника"</h2>
+                    <p>Описание: Марка: Puff Bar, сочный черниковый вкус</p>
+                    <p>Цена: 450 руб.</p>
+                    <button class="add-to-cart-btn" data-product="Черника" data-price="450">Добавить в корзину</button>
+                    <a href="https://t.me/TIMwagn" class="payment-btn">Оплатить в личных сообщениях</a>
+                </div>
+                <div class="product">
+                    <img src="манго.png" alt="Электронная сигарета">
+                    <h2>Электронная сигарета "Манго"</h2>
+                    <p>Описание: Марка: Geek Bar, экзотический вкус спелого манго</p>
+                    <p>Цена: 650 руб.</p>
+                    <button class="add-to-cart-btn" data-product="Манго" data-price="650">Добавить в корзину</button>
+                    <a href="https://t.me/TIMwagn" class="payment-btn">Оплатить в личных сообщениях</a>
+                </div>
+                <div class="product">
+                    <img src="клубника.jpg" alt="Электронная сигарета">
+                    <h2>Электронная сигарета "Клубника-Киви"</h2>
+                    <p>Описание: Марка: HQD, с натуральным вкусом свежей клубники и киви</p>
+                    <p>Цена: 799 руб.</p>
+                    <button class="add-to-cart-btn" data-product="Клубника-Киви" data-price="799">Добавить в корзину</button>
+                    <a href="https://t.me/TIMwagn" class="payment-btn">Оплатить в личных сообщениях</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <main>
-        <section id="about">
-    <h2>О Славике</h2>
-    <p>Славик - это не просто друг, это человек, который всегда готов поддержать и вдохновить. Его доброта, юмор и преданность делают его незаменимым другом. Мы хотим рассказать вам больше о его замечательной личности.</p>
-    <!-- Здесь вы можете добавить дополнительную информацию о Славике -->
-</section>
 
-       <section id="gallery">
-    <h2>Наши воспоминания</h2>
-    <p>Здесь мы собрали самые яркие моменты нашей жизни вместе с Славиком. Прогуляйтесь по нашей галерее, чтобы вспомнить веселые моменты и важные события в нашей дружбе.</p>
-    <img src="амльас.png" alt="Фотография Славика" class="gallery-img">
-</section>
-
-
-        <section id="feedback">
-            <h2>Отзывы</h2>
-            <p>Славик, ты удивительный друг! Я желаю тебе оставаться таким, каким ты был и есть - добрым, веселым и преданым. Твоя дружба - настоящее сокровище, и я благодарен за возможность быть твоим другом.</p>
-            <p>Великие друзья, подобно великим винам, с возрастом становятся только лучше. Ты всегда был рядом, когда мне была нужна поддержка, и я знаю, что с тобой рядом я смогу преодолеть любые трудности. Славик, пусть твоя жизнь будет наполнена радостью, успехами и бесконечной дружбой!</p>
-            <!-- Здесь вы можете добавить другие отзывы -->
-        </section>
-
-      <section id="contact">
-    <h2>Контакты</h2>
-    <p>Вы всегда можете связаться с Славиком через Telegram:</p>
-    <a href="https://web.telegram.org/k/#@FtoRnick1" target="_blank">
-        <img src="telegram-icon-social-media-popular-messenger-app_277909-203.png" alt="Telegram">
-    </a>
-</section>
-    </main>
-
+       
 </body>
 </html>
